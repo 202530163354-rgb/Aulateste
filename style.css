@@ -1,4 +1,8 @@
 body {
+  button {
+  display: block;
+  margin: 10px auto;
+}
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #fff5f7;
