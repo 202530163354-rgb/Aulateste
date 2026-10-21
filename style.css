@@ -1,13 +1,6 @@
 body {
  
 .produto {
-  flex: 0 1 220px;
-  width: 220px;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-}
-.produto {
   width: 220px;
   padding: 15px;
   background: white;
