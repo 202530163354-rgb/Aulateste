@@ -1,68 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-    <title>Loja de Skincare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SkinCare</h1>
-<button>Ver produtos</button>
-<div class="produto">
-  <img
-    src="https://img.magnific.com/fotos-gratis/produtos-cosmeticos-de-beleza-masculina-com-display_23-2150435210.jpg"
-    alt="Imagem do produto"
-    class="produto-img"
-  />
+    <main class="container">
+        <header class="topo">
+            <h1>Loja de Roupas</h1>
+            <p>Cadastre e visualize os produtos da loja.</p>
+        </header>
 
-  <div class="produto-info">
-    <h2 class="produto-nome">Kit Premium de Cuidados com a Pele</h2>
+        <section class="formulario">
+            <h2>Cadastrar produto</h2>
 
-    <p class="produto-descricao">
-    Kit Skincare Completo ✨
+            <form id="formProduto">
+                <label for="nome">Nome do produto</label>
+                <input id="nome" type="text" placeholder="Ex.: Camiseta Básica" required>
 
-Cuide da sua pele com carinho e transforme sua rotina de beleza em um momento especial! Nosso kit skincare reúne produtos essenciais para limpar, hidratar e cuidar da sua pele diariamente. Ideal para quem busca uma pele com aparência saudável, macia, radiante e bem cuidada.
+                <label for="preco">Preço (R$)</label>
+                <input id="preco" type="number" min="0" step="0.01" placeholder="Ex.: 59.90" required>
 
- Perfeito para você ou para presentear alguém especial!
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="3" placeholder="Descreva o produto"></textarea>
 
- Mais cuidado, mais autoestima e mais beleza todos os dias!
-    </p>
+                <label for="imagem">URL da imagem</label>
+                <input id="imagem" type="url" placeholder="https://site.com/imagem.jpg">
 
-    <p class="produto-preco">R$ 149,90</p>
+                <button id="btnSalvar" type="submit">Salvar produto</button>
+            </form>
+            <p id="mensagem" aria-live="polite"></p>
+        </section>
 
-    <button class="produto-botao">
-      Comprar agora
-    </button>
-  </div>
-</div>
-<div class="produto">
-  <img
-    src="<div class="produto">
-  <img
-    src="https://flordejambu.com/wp-content/uploads/2025/03/Hidratante_facial_natural_vegano_amazonia.jpg"
-    alt="Imagem do produto"
-    class="produto-img"
-  />
+        <section class="secao-produtos">
+            <h2>Produtos cadastrados</h2>
+            <div id="lista" class="produtos-container">
+                <!-- Os cards serão criados pelo JavaScript -->
+            </div>
+        </section>
+    </main>
 
-  <div class="produto-info">
-    <h2 class="produto-nome">Creme Hidrante Facial</h2>
-
-    <p class="produto-descricao">
-    Creme Hidratante Facial 50g
-
-    Nosso creme hidratante foi produzido com o objetivo de aumentar a autoestima feminina, uniformizando e hidratando sua pele!
-    Sua textura agradável é ideal para complementar sua rotina diária de skincare, proporcionando uma sensação de conforto e frescor.
-    </p>
-
-    <p class="produto-preco">R$ 49.90</p>
-
-    <button class="produto-botao">
-      Comprar agora
-    </button>
-  </div>
-</div>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
+  
